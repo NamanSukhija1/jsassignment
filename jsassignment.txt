@@ -1,0 +1,47 @@
+// 1.
+addNumber(3, 4);
+
+function addNumber(a, b) {
+  console.log(a + b);
+}
+
+// 2.
+multiplyNumber(5, 6);
+
+const multiplyNumber = function(a, b) {
+  return a * b;
+}
+
+// 3.
+function sumNumbers(a, b) {
+  var result;
+  console.log(result); // Output: undefined
+  result = a + b;
+  return result;
+}
+
+console.log(sumNumbers(7, 8));
+
+// 4.
+{
+  let variableLet = 10;
+  console.log("Before variableLet is declared:", variableLet); // Output: undefined
+  variableLet = 20;
+  console.log("After variableLet is declared:", variableLet); // Output: 20
+}
+
+{
+  var variableVar = 30;
+  console.log("Before variableVar is declared:", variableVar); // Output: 30
+}
+
+{
+  const variableConst = 40;
+  console.log("Before variableConst is declared:", variableConst); // Output: 40
+}
+
+// 5.
+{
+  console.log(variableBlock); // ReferenceError: Cannot access 'variableBlock' before initialization
+  let variableBlock = 50;
+}
